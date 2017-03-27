@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"workoutpackage- workoutr\"\noutput: md_document\n---\n\n\n```{r}\ninstall.packages(\"devtools\")\nlibrary(\"devtools\")\ndevtools::install_github(\"klutometis/roxygen\")\nlibrary(roxygen2)\n\n\n#' Workout Decision Helper\n#' @param Input a the time you have available in minutes to figure out what workout you should do.\n#' @param Time a number\n#' @param Cardio a character\n#' workoutr()\n#'\n\nworkoutr <- function(time){\n  if (time > 40){\n    print(\"You should go lift, bro.\")\n  } else{\n    print(\"You should run, chicken legs.\")\n  }\n}\n\n#test values\nworkoutr(39)\n\nworkoutr(55)\n \n#should give two different options.\n             \n```\n\nAdd a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Cmd+Option+I*.\n\nWhen you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Cmd+Shift+K* to preview the HTML file).\n",
+    "created" : 1490362117160.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3538985991",
+    "id" : "9B054CA",
+    "lastKnownWriteTime" : 1490639825,
+    "last_content_update" : 1490639825190,
+    "path" : "~/Documents/Spring2017GRAD/GEOL590/workoutr/workoutr.Rmd",
+    "project_path" : "workoutr.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
